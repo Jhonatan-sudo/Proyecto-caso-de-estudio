@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detalle del Álbum</title>
+  <link rel="stylesheet" href="/Docs/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="/CSS/header.css">
+  <link rel="stylesheet" href="/Views/Álbum/CSS/stylesÁlbumDetail.css">
+</head>
+
+<body>
+
+    <div class = "cabecero">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="/Media/logo.png" alt="">
+                    <div class="LogoCabecero">
+                        <div class = LogoTexto>
+                            <a class="navbar-brand" href="/Views/UserDashboard/UserStartPage.html">WAVY BEATS</a>
+                        </div>
+                    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">hola</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <div class="NavigationButtom">
+                            <a class="nav-link" href="/Views/Álbum/ÁlbumList.html">Tus Álbumes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="NavigationButtom">
+                            <a class="nav-link" href="/Views/Álbum/ÁlbumDetail.html">Detalles de Álbum</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="NavigationButtom">
+                            <a class="nav-link" href="/Views/Álbum/CreateAndEditÁlbum.html">Crear/Editar Álbum</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="NavigationButtom">
+                            <a class="nav-link" href="/Views/Álbum/CreateAndEditSong.html">Crea tu Canción</a>
+                        </div>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+  </div>
+
+
+
+<div class="container my-5">
+  <div class="text1">
+    <p class="text2">Detalle del Álbum</p>
+</div>
+  <div class="card mb-4">
+    <div class="card-body">
+      <h3 class="card-title">Título: <span class="text-primary">El Gran Álbum</span></h3>
+      <p><strong>Año:</strong> 1995</p>
+      <p><strong>Descripción:</strong> Álbum de clásico con los mejores éxitos.</p>
+      <p><strong>Medio:</strong> CD</p>
+      <p><strong>Artistas:</strong> Banda X, Cantante Y</p>
+
+      <div class="d-flex gap-2 mt-3">
+        <button class="btn btn-warning" onclick="location.href='/crear y editar album.html'">Editar Álbum</button>
+        <button class="btn btn-danger" >Eliminar Álbum</button> 
+      </div>
+    </div>
+  </div>
+
+  <div class="text1">
+    <p class="text2">Canciones</p>
+</div>
+  <div class = "songs">
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            <strong>Título:</strong> Canción 1<br />
+            <small><strong>Intérprete:</strong> Artista A</small>
+          </div>
+          <span class="badge bg-primary rounded-pill">3:45</span>
+        <button class="btn-song" onclick="location.href='/Views/Álbum/CreateAndEditSong.html'">Editar cancion</button>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            <strong>Título:</strong> Canción 2<br />
+            <small><strong>Intérprete:</strong> Artista B</small>
+          </div>
+          <span class="badge bg-primary rounded-pill">4:10</span>
+        <button class="btn-song" onclick="location.href='/Views/Álbum/CreateAndEditSong.html'">Editar cancion</button>
+        </li>
+      </ul>
+  </div>
+        <!-- Más canciones aquí -->
+      </ul>
+   <div class="d-flex gap-2 mt-3">
+        <button class="btn btn-warning" onclick="location.href='/Views/Álbum/CreateAndEditSong.html'">Editar canciones</button>
+    </div>
+
+
+  <script src="/Docs/JS/bootstrap.min.js"></script>
+</body>
+</html>

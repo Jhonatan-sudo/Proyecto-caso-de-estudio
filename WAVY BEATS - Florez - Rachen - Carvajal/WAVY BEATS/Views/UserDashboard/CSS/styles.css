@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary: #0B0B0D;
+    --secondary: #6BB39B;
+    --terciary: #85E6C0;
+    --fourth: #DAF3EA;
+    --fifth: #D7F4E8;
+}
+
+body{
+    background-color: var(--secondary);
+}
+
+.slide{
+    border: solid var(--primary) 5px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.card-group{
+    margin: 30px;
+}
+
+.card{
+    border: solid var(--primary) 5px;
+    border-radius: 5px;
+}

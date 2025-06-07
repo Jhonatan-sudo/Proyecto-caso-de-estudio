@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear o Editar Álbum</title>
+  <link rel="stylesheet" href="/Docs/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="/CSS/header.css">
+  <link rel="stylesheet" href="/Views/Álbum/CSS/stylesCreateEditÁlbum.css">
+</head>
+
+
+<body>
+
+    <div class = "cabecero">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="/Media/logo.png" alt="">
+                    <div class="LogoCabecero">
+                        <div class = LogoTexto>
+                            <a class="navbar-brand" href="/Views/UserDashboard/UserStartPage.html">WAVY BEATS</a>
+                        </div>
+                    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">hola</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <div class="NavigationButtom">
+                            <a class="nav-link" href="/Views/Álbum/ÁlbumList.html">Tus Álbumes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="NavigationButtom">
+                            <a class="nav-link" href="/Views/Álbum/ÁlbumDetail.html">Detalles de Álbum</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="NavigationButtom">
+                            <a class="nav-link" href="/Views/Álbum/CreateAndEditÁlbum.html">Crear/Editar Álbum</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="NavigationButtom">
+                            <a class="nav-link" href="/Views/Álbum/CreateAndEditSong.html">Crea tu Canción</a>
+                        </div>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container mt-5">
+  <h2 class="mb-4 text-center">Crear / Editar Álbum</h2>
+
+  <form action="#" method="post">
+    <!-- Datos del álbum -->
+    <div class="mb-3">
+        <!--Agrega un margen inferior entre elementos para que no estén tan pegados-->
+      <label for="titulo" class="form-label">Título del Álbum</label>
+      <input type="text" class="form-control" id="titulo" name="titulo" required>
+    </div>
+
+    <div class="mb-3">
+        <!--Agrega un margen inferior entre elementos para que no estén tan pegados.-->
+      <label for="anio" class="form-label">Año de Producción</label>
+      <input type="number" class="form-control" id="anio" name="anio" min="1900" max="2099" required>
+    </div>
+
+    <div class="mb-3">
+        <!--Agrega un margen inferior entre elementos para que no estén tan pegados.-->
+      <label for="descripcion" class="form-label">Descripción</label>
+      <textarea class="form-control" id="descripcion" name="descripcion" rows="3" required></textarea>
+    </div>
+
+    <div class="mb-3">
+        <!--Agrega un margen inferior entre elementos para que no estén tan pegados.-->
+      <label for="medio" class="form-label">Medio (CD, Casete, Disco, etc.)</label>
+      <input type="text" class="form-control" id="medio" name="medio" required>
+    </div>
+
+    <!-- Botones -->
+    <div class="d-flex justify-content-end gap-2">
+        <!--Esto coloca los botones alineados a la derecha, uno al lado del otro, con un pequeño espacio entre ellos.-->
+        <button type="submit" class="btn btn-success">Guardar Álbum</button>
+        <button type="reset" class="btn btn-secondary">Limpiar</button>
+    </div>
+  </form>
+</div>
+  <script src="/Docs/JS/bootstrap.min.js"></script>
+</body>
+</html>

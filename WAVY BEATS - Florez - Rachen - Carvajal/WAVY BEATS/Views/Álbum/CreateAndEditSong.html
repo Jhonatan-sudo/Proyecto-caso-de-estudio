@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crear / Editar Canción</title>
+  <link rel="stylesheet" href="/Docs/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="/CSS/header.css">
+  <link rel="stylesheet" href="/Views/Álbum/CSS/stylesCreateEditSong.css">
+</head>
+<body>
+
+
+
+
+      <div class = "cabecero">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="/Media/logo.png" alt="">
+                    <div class="LogoCabecero">
+                        <div class = LogoTexto>
+                            <a class="navbar-brand" href="/Views/UserDashboard/UserStartPage.html">WAVY BEATS</a>
+                        </div>
+                    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">hola</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <div class="NavigationButtom">
+                            <a class="nav-link" href="/Views/Álbum/ÁlbumList.html">Tus Álbumes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="NavigationButtom">
+                            <a class="nav-link" href="/Views/Álbum/ÁlbumDetail.html">Detalles de Álbum</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="NavigationButtom">
+                            <a class="nav-link" href="/Views/Álbum/CreateAndEditÁlbum.html">Crear/Editar Álbum</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="NavigationButtom">
+                            <a class="nav-link" href="/Views/Álbum/CreateAndEditSong.html">Crea tu Canción</a>
+                        </div>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+        </nav>
+  </div>
+
+<div class="container mt-5">
+  <h2 class="mb-4 text-center">Crear / Editar Canción</h2>
+
+  <form action="#" method="post">
+    <!-- Selección del álbum -->
+    <div class="mb-3">
+      <label for="album" class="form-label">Álbum</label>
+      <select class="form-select" id="album" name="album" required>
+        <option value="" disabled selected>Seleccione un álbum</option>
+        <option value="album1">Álbum 1 - Nombre</option>
+        <option value="album2">Álbum 2 - Nombre</option>
+        <option value="album3">Álbum 3 - Nombre</option>
+        <!-- Aquí puedes cargar dinámicamente los álbumes desde backend -->
+      </select>
+    </div>
+
+    <!-- Título de la canción -->
+    <div class="mb-3">
+      <label for="titulo" class="form-label">Título de la Canción</label>
+      <input type="text" class="form-control" id="titulo" name="titulo" required />
+    </div>
+
+    <!-- Duración -->
+    <div class="row mb-3">
+      <div class="col">
+        <label for="minutos" class="form-label">Minutos</label>
+        <input type="number" class="form-control" id="minutos" name="minutos" min="0" required />
+      </div>
+      <div class="col">
+        <label for="segundos" class="form-label">Segundos</label>
+        <input type="number" class="form-control" id="segundos" name="segundos" min="0" max="59" required />
+      </div>
+    </div>
+
+    <!-- Intérprete -->
+    <div class="mb-3">
+      <label for="interprete" class="form-label">Intérprete</label>
+      <input type="text" class="form-control" id="interprete" name="interprete" required />
+    </div>
+
+    <!-- Botones -->
+   <div class="d-flex justify-content-between gap-2">
+  <button type="button" class="btn btn-primary">
+    Agregar otra Canción
+  </button>
+  <div class="d-flex gap-2">
+    <button type="submit" class="btn btn-primary">Guardar Canción</button>
+    <button type="reset" class="btn btn-secondary">Limpiar</button>
+  </div>
+</div>
+
+  </form>
+</div>
+  <script src="/Docs/JS/bootstrap.min.js"></script>
+</body>
+</html>
