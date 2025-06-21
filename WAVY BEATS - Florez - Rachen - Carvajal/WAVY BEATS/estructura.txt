@@ -1,0 +1,55 @@
+Listado de rutas de carpetas
+El n˙mero de serie del volumen es 74CC-6020
+C:.
+|   estructura.txt
+|   
++---CSS
+|       header.css
+|       
++---Docs
+|   +---CSS
+|   |       bootstrap.min.css
+|   |       
+|   \---JS
+|           bootstrap.min.js
+|           
++---Media
+|       card1-1.webp
+|       card1-2.jpg
+|       card1-3.webp
+|       carrousel1-1.jpg
+|       carrousel1-2.jpg
+|       carrousel1-3.jpg
+|       logo.png
+|       
++---Nueva carpeta
++---routes
+|   +---administrador
+|   \---usuario
+\---Views
+    +---LogInAndSignUp
+    |   |   login.html
+    |   |   registro.html
+    |   |   
+    |   \---CSS
+    |           styles1.css
+    |           styles2.css
+    |           
+    +---UserDashboard
+    |   |   UserStartPage.html
+    |   |   
+    |   \---CSS
+    |           styles.css
+    |           
+    \---¡lbum
+        |   CreateAndEditSong.html
+        |   CreateAndEdit¡lbum.html
+        |   ¡lbumDetail.html
+        |   ¡lbumList.html
+        |   
+        \---CSS
+                stylesCreateEditSong.css
+                stylesCreateEdit¡lbum.css
+                styles¡lbumDetail.css
+                styles¡lbumList.css
+                
